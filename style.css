@@ -1,0 +1,310 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    background: #f7f5f0;
+}
+
+/* Nav Bar*/
+.nav-bar {
+    width: 100%;
+    background: black;
+    min-height: 30px;
+    padding: 10px;
+    position: fixed;
+    text-align: center;
+}
+.nav {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.nav .name {
+    display: block;
+    margin-right: auto;
+    color: white;
+}
+
+.nav li {
+    padding: 5px 60px 10px 10px;    
+}
+
+.nav a {
+    transition: all .10s;
+    text-decoration: none;
+    color: #999;
+}
+
+.nav a:hover {
+    color: white;
+}
+
+/*Header*/
+header {
+    text-align: center;
+    background: url("image/urban.jpg") no-repeat bottom center;
+    background-size: cover;
+    overflow: hidden;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+header {
+    line-height: 1.5;
+}
+
+header .profile-image {
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid white;
+    transition: all .5s;
+}
+
+header .profile-image:hover {
+    transform: scale(1.1) rotate(360deg);
+
+}
+
+header .my-name {
+    color: black;
+    background-color: #efefef;
+    padding: 10px;
+    border-radius: 5px;
+    display: table;
+    margin: 10px auto;
+}
+
+header .my-location{
+    color: white;
+    background-color: #222;
+    padding: 10px;
+    margin: 10px auto;
+    display: table;
+    border-radius: 5px;
+}
+
+/* Background Card and Goals Card */
+.flex h2 {
+    text-align: center;
+}
+
+.flex h2:hover{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 10px auto;
+    display: table;
+    border-radius: 5px;
+}
+.card {
+    margin: 10px;
+    padding: 10px 20px 20px;
+    max-width: 500px;
+    text-align: left;
+    background: rgb(255, 255, 255);
+    box-shadow: 20px 20px 10px rgb(51, 50, 49);
+    color: black;
+    border: 3px solid black;    
+    border-radius: 20px;
+    transition: all .5s;
+}
+
+.card:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 20px 20px 10px rgb(255, 181, 0);
+}
+
+/*Resume Page*/
+.Educational-Background {
+    display: inline-block;
+    margin: 20px 10px 10px 10px;
+    padding: 10px;
+    max-width: 500px;
+    text-align: center;
+    background: white;    
+    color: black;    
+    border-radius: 20px;
+    box-shadow: 20px 20px 10px grey;
+    transition: all .5s;
+    font-family: 'Times New Roman';    
+}
+
+.education {
+    margin: 20px;
+    padding: 20px 150px 20px;    
+    text-align: left;
+    background: white;    
+    color: black;
+    border: 3px solid black;    
+    border-radius: 20px;
+    transition: all .5s;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.education:hover {
+    box-shadow: 20px 20px 10px black;
+}
+
+.education img {
+    width: 250px;
+    height: 125px;
+    margin-right: 10px;
+}
+
+.education p{
+    text-align: left;
+}
+
+.education h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.contact {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px 20px;
+    background-color: white;
+    border: 10px solid white;
+    box-shadow: 20px 20px 10px rgb(87, 84, 84);
+    border-radius: 20px;
+    transition: all .5s;
+}
+
+
+.contact img {
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+}
+
+.contact img:hover{
+    transform: scale(1.1) rotate(360deg);
+}
+ .contact a {
+     text-decoration: none;
+     font-weight: bold;
+ }
+
+/*Skills in second box of goal section*/
+ul .skills {
+    padding: 0;
+    text-align: center;
+}
+.skills li {
+    border-radius: 6px;
+    display: inline-block;
+    background: #ff9904;
+    color: white;
+    padding: 5px 10px;
+    margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+    background: #0399ff;
+}
+ /*Footer*/
+ footer {
+     width: 100%;
+     min-height: 30px;
+     padding: 20px 0 40px 20px;
+ }
+
+ footer .copyright {
+     top: -8px;
+     font-size: 14px;
+ }
+
+ footer ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ footer ul li {
+     display: inline-block;
+ }
+
+ a.social {
+     display: inline-block;
+     text-indent: -9999px;
+     margin-left: 5px;
+     width: 30px;
+     height: 30px;
+     background-size: 30px 30px;
+     opacity: .4;
+     transition: all .5s;
+ }
+
+ a.twitter {
+     background-image: url("image/twitter.svg");
+ }
+ a.linkedin {
+     background-image: url("image/linkedin.svg");
+ }
+a.github {
+    background-image: url("image/github.svg");
+}
+
+a.social:hover {
+    opacity: 1;
+}
+
+.clearfix {
+    clear: both;
+}
+/*-------------------Resume.html------------------------*/
+
+
+
+
+
+/*For larger screen*/
+@media screen and (min-width: 720px) {
+  
+    .flex {
+        display: -ms-flexbox;      /* TWEENER - IE 10 */
+        display: flex; 
+        max-width: 1200px;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+  
+    header {
+      min-height: 470px;
+    }
+  
+    .nav {
+      max-width: 1200px;
+      padding: 0 30px;
+    }
+  
+  
+    main {
+      padding-top: 20px;
+    }
+  
+    main p {
+      line-height: 1.6em;
+    }
+  
+    footer {
+      font-size: 1.3em;
+      max-width: 1200px;
+      margin: 40px auto;
+    }
+  
+  }
